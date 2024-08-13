@@ -18,7 +18,6 @@ function LoginForm() {
       { email, password },
       {
         onSettled: () => {
-          setEmail("");
           setPassword("");
         },
       }
@@ -27,7 +26,8 @@ function LoginForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <FormRowVertical label="Email address">
+      <FormRowVertical label="Email address (try this: 98dccfd35b@emailaoa.pro)">
+        {/* <h1>try this: 98dccfd35b@emailaoa.pro</h1> */}
         <Input
           type="email"
           id="email"
@@ -39,7 +39,8 @@ function LoginForm() {
         />
       </FormRowVertical>
 
-      <FormRowVertical label="Password">
+      <FormRowVertical label="Password (12345678)">
+        {/* <h1>12345678</h1> */}
         <Input
           type="password"
           id="password"
